@@ -1,0 +1,40 @@
+* {
+    margin: 10px;
+    padding: 0;
+    
+}
+
+
+#search {
+    
+    height: 30px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: 2px solid rgb(5, 121, 129);
+    color: rgb(5, 121, 129);
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+   
+}
+
+#plus {
+    font-size: 50px;
+    background-color: turquoise;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    width: 75px;
+    height: 75px;
+}
+
+#createAccount{
+    background-color: rgba(83, 125, 240, 0.856);
+    font-size: 20px;
+    box-shadow: 2px 2px 2px 1px;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+}
