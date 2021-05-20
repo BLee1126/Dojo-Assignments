@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b197f89ee6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navMain">
+        <div class = "navMenu">
+            <div class="navProfile">Profile</div>
+            <div class="navLinks">
+                <div class = "navItems">
+                    <div>Home</div>
+                    <div class = "profile">My Profile</div>
+                    <div>Find Connections</div>
+                </div>
+            </div>
+        </div>
+        <div = class="navQuit"><button type="button" id ="quit"> Sign Out </button></div>
+    </div>
+    <div id="main">
+        <div class="left">
+            <div class="userCard">
+                <div class = "cardTop"></div>
+                <div class = "cardBot">
+                    <ul class = "cardList">
+                        <li class = "cardName">Jane Doe</li>
+                        <li class = "cardLoc">Seattle</li>
+                        <li>Developer | Engineer | Problem Solver</li>
+                        <li>Master of shadows and the internet!</li>
+                        <li class = "cardProfile">edit profile</li>
+                    </ul>
+                    <img src="jane-m.jpg" alt="user circle" id="user">
+                    <img src="./map-marker.png" alt="map marker" class="imgMap">
+                    <img src="./gear.png" alt="gear" class="imgGear">
+                </div>
+            </div>
+            <div id="education">
+                <div class = "eduTitle">Education</div>
+                <div class = "eduItem">Coding Dojo - Full Stack Bootcamp</div>
+                <div class = "eduSubitem">Dec 2019 - Mar 2020</div>
+                <div class = "eduItem1">Triple belt in Python, MERN, C#</div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="rightTop">
+                <div class="conReq">
+                    <i class="fas fa-exclamation"></i>
+                    <button type = "button" class = conReqbut>2</button>
+                    Connection Requests
+                </div>
+                <div class="conTotal">
+                    <div class = "conTotalleft">
+                        <div> <img src="./todd-s.jpg" alt="todd" class = "pics"> Todd E</div>
+                        <div> <img src="./phil-s.jpg" alt="phil" class = "pics"> Phil K</div>
+                        <div> <img src="./user-circle.png" alt="empty" class = "pics"> Empty</div>
+                    </div>
+                    <div class="conTotalright">
+                        <div><img src="./close-circle.png" alt="reject" class ="pics"><img src="./accept-circle.png" alt="accept" class ="pics"></div>
+                        <div><img src="./close-circle.png" alt="reject" class ="pics"><img src="./accept-circle.png" alt="accept" class ="pics"></div>
+                        <div><img src="./close-circle.png" alt="reject" class ="pics"><img src="./accept-circle.png" alt="accept" class ="pics"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="rightBot">
+                <div class="botRighttop">
+                    <button type="button" id = "butCon">500+</button>
+                    <p>Your Connections</p>
+                </div>
+                <div class="botRightmid">
+                    <div class="conList">
+                        <div> <img src="./adrien-s.jpg" alt="todd" class = "pics"> Adrien S</div>
+                        <div> <img src="./Alayne-s.jpg" alt="phil" class = "pics"> Alayne T</div>
+                        <div> <img src="./anne-s.jpg" alt="empty" class = "pics"> Anne S</div>
+                        <div> <img src="./arry-s.jpg" alt="empty" class = "pics"> Arry S</div>
+                </div>
+                </div>
+                <div class="botRightbot">
+                    <p class = "viewMore"><a href="viewmore.com">View More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

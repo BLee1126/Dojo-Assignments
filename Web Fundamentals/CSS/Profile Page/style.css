@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.navMain {
+    width: auto;
+    height: 10em;
+    background-color: black;
+    display: flex;
+}
+
+.navMenu {
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navQuit {
+    flex: 1;
+    display: flex;
+}
+
+.navProfile {
+    flex: 1;
+    display: flex;
+    color: white;
+    width: 5em;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+}
+
+.navLinks {
+    flex: 3;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+.navItems {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+    list-style: none;
+    font-size: 2em;
+    margin: 2em;
+}
+
+.navQuit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quit {
+    background-color: cyan;
+    color: black;
+    width: 6em;
+    font-size: 2em;
+    border: 2px solid white;
+}
+
+.profile {
+    font-weight: bold;
+}
+
+#main {
+    display: flex;
+    width: auto;
+    margin: 0 20em;
+    justify-content: center;
+    align-items: flex-start;
+    vertical-align: top;
+    height: 100vh;
+    background-color: black;
+    gap: 2em;
+}
+
+.left {
+    width: 60%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3em;
+}
+
+.right {
+    height: 95%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+    gap: 3em;
+}
+
+.userCard {
+    background-color: darkblue;
+    width: 100%;
+    height: 50%;
+    border: 3px solid gray;
+}
+
+#education {
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+    border: 2px solid orange;
+    margin-bottom: 3em;
+}
+
+.cardTop {
+    background-color: darkslateblue;
+    width: 100%;
+    height: 30%;
+}
+
+.cardBot {
+    background-color: white;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+.cardList {
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 6em;
+}
+
+.cardName {
+    margin: 2em 0;
+    font-size: 3em;
+    color: black;
+}
+
+.cardList li {
+    margin-bottom: 1em;
+}
+
+.cardLoc {
+    margin-top: -2em;
+    margin-left: 1em;
+    font-size: 200%;
+}
+
+.cardProfile {
+    margin-left: 2em;
+    font-size: 120%;
+    text-decoration: underline;
+    color: cadetblue;
+}
+
+#user {
+    position:absolute;
+    left: 4em;
+    top: -8em;
+    width: 14em;
+    border-radius: 50%;
+}
+
+.imgMap {
+    position: absolute;
+    width: 1em;
+    left: 6.5em;
+    top: 12.5em;
+}
+
+
+.imgGear {
+    position: absolute;
+    width: 1em;
+    left: 7em;
+    top: 22em;
+}
+
+.eduTitle {
+    flex: 1;
+    width: 93.4%;
+    background-color: deepskyblue;
+    text-align: start;
+    font-size: 250%;
+    padding-left: 1em;
+}
+
+.eduItem {
+    display: flex;
+    flex: 3;
+    width: 96%;
+    background-color: white;
+    font-size: 175%;
+    text-align: left;
+    padding-left: 1em;
+
+}
+.eduItem1 {
+    display: flex;
+    flex: 4;
+    width: 96.1%;
+    background-color: white;
+    padding-left: 1.7em;
+}
+
+.eduSubitem {
+    flex: 2;
+    background-color: white;
+    width: 96%;
+    color: silver;
+    font-size: 125%;
+    padding-left: 1.4em;
+}
+
+#rightTop {
+    flex: 1;
+    width: 100%;
+    background-color: yellow;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#rightBot {
+    flex: 2;
+    width: 100%;
+    background-color: red;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+
+.conTotal{
+    flex: 3;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.conReq  {
+    flex: 1;
+    width: 100%;
+    background-color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 135%;
+    color: white;
+    position: relative;
+}
+
+.fas {
+    position: absolute;
+    top: .8em;
+    left: 1em;
+    font-size: 180%;
+    color: red;
+}
+
+.conTotalleft {
+    width: 60%;
+    height: 100%;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+.conTotalleft div{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.conTotalright {
+    width: 40%;
+    height: 100%;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conTotalright div{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.conTotal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.pics {
+    border-radius: 50%;
+    width: 2em;
+}
+
+.botRighttop{
+    flex: .5;
+    background-color: silver;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-indent: -6em;
+    font-size: 150%;
+}
+.botRightmid{
+    flex: 3;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.conList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.conList div {
+    height: 25%;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 200%;
+    border: 2px solid gray;
+}
+
+.conList img {
+    margin-right: 4em;
+    margin-left: 2em;
+    width: 2em;
+}
+
+.botRightbot{
+    flex: .5;
+    background-color: cadetblue;
+    width: 100%;
+}
+
+#butCon {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 150%;
+}
+
+.botRighttop p {
+    font: 200%;
+    color: white;
+}
+
+.viewMore {
+    margin: 1em 0;
+    font-size: 200%;
+    text-align: center;
+}
+
+.conReqbut {
+    border-radius: 50%;
+    font-size: 120%;
+    margin-right: 2em;
+    width: 1.5em;
+}
