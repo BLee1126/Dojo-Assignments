@@ -1,0 +1,130 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* Fixed width container class that will "auto-center" itself */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*  html buttons */
+
+/* <div>
+<button type = "submit" id = "search">Search</button><br><br><br>
+</div>
+
+<div>
+<button type = "submit" id = "plus">+</button><br><br><br>
+</div>
+
+<div>
+<button type = "submit" id = "createAccount">Create Account</button>
+</div>
+   */
+
+/* rows */
+.row {
+    display: flex;
+    height: 200px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    height: 150px;
+    border: 3px solid gray;
+    color: white;
+    background-color: turquoise;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2 {
+    flex: 2;
+    display: flex;
+    height: 150px;
+    border: 3px solid gray;
+    color: white;
+    background-color: turquoise;
+    justify-content: center;
+    align-items: center;
+}
+
+/* nav bar */
+
+.navMain {
+    width: auto;
+    height: 10em;
+    background-color: black;
+    display: flex;
+}
+
+.navMenu {
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navQuit {
+    flex: 1;
+    display: flex;
+}
+
+.navProfile {
+    flex: 1;
+    display: flex;
+    color: white;
+    width: 5em;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+}
+
+.navLinks {
+    flex: 3;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+.navItems {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+    list-style: none;
+    font-size: 2em;
+    margin: 2em;
+}
+
+.navQuit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quit {
+    background-color: cyan;
+    color: black;
+    width: 6em;
+    font-size: 2em;
+    border: 2px solid white;
+}
+
+.profile {
+    font-weight: bold;
+}
