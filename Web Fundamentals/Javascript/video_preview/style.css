@@ -1,0 +1,16 @@
+
+.catBox {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    margin: 4em auto;
+
+}
+
+
+.cat {
+    width: 70%;
+    height: 100%;
+    background-color: darkblue;
+    
+}
