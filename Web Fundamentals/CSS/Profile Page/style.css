@@ -202,11 +202,11 @@ ul {
 
 .eduTitle {
     flex: 1;
-    width: 93.4%;
+    width: 100%;
     background-color: deepskyblue;
     text-align: start;
     font-size: 250%;
-    padding-left: 1em;
+    text-indent: 3em;
 }
 
 .eduItem {
