@@ -25,9 +25,9 @@
                 <h1>San Jose</h1>
                 <span>
                     <label>Show temperature in: </label>
-                    <select name=temperature id="tempSel" onchange="convertCtoF()">
-                        <option value="Celsius" onclick="convertFtoC()">°C</option>
-                        <option value="Fahrenheit" onclick="convertCtoF()">°F</option>
+                    <select name=temperature id="tempSel" onchange="convertTemp()">
+                        <option value="Celsius">°C</option>
+                        <option value="Fahrenheit">°F</option>
                     </select>
                 </span>
             </div>
@@ -37,8 +37,8 @@
                     <img src="./assets/some_rain.png" alt="some rain">
                     <div>some rain</div>  
                     <div class = "tempsDisplay">
-                        <p class = "high temps">23.9°</p>
-                        <p class = "low temps">18.3°</p>
+                        <p id = "high0" class="temps">23.9°</p>
+                        <p id = "low0" class="temps">18.3°</p>
                     </div>
                 </div>
                 <div class = "tempPanel">
@@ -46,8 +46,8 @@
                     <img src="./assets/some_sun.png" alt="some rain">
                     <div>some rain</div>  
                     <div class = "tempsDisplay">
-                        <p class = "high temps">23.9°</p>
-                        <p class = "low temps">18.3°</p>
+                        <p id = "high1" class="temps">23.9°</p>
+                        <p id = "low1" class="temps">18.3°</p>
                     </div>
                 </div>
                 <div class = "tempPanel">
@@ -55,8 +55,8 @@
                     <img src="./assets/some_clouds.png" alt="some rain">
                     <div>some rain</div>  
                     <div class = "tempsDisplay">
-                        <p class = "high temps">23.9°</p>
-                        <p class = "low temps">18.3°</p>
+                        <p id = "high2" class="temps">23.9°</p>
+                        <p id = "low2" class="temps">18.3°</p>
                     </div>
                 </div>
                 <div class = "tempPanel">
@@ -64,8 +64,8 @@
                     <img src="./assets/some_sun.png" alt="some rain">
                     <div>some rain</div>  
                     <div class = "tempsDisplay">
-                        <p class = "high temps">23.9°</p>
-                        <p class = "low temps">18.3°</p>
+                        <p id = "high3" class="temps">23.9°</p>
+                        <p id = "low3" class="temps">18.3°</p>
                     </div>
                 </div>
             </div>
