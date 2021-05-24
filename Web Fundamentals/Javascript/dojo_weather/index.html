@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="allContainer">
+        <nav id="navBar">
+            <span>DojoWeather</span>
+            <div id="navMenu">
+                <button id = "burbank" type="button" onclick="uhoh()">Burbank</button>
+                <button id = "chicago" type="button" onclick="uhoh()">Chicago</button>
+                <button id = "dallas" type="button" onclick="uhoh()">Dallas</button>
+            </div>
+        </nav>
+        <div id="container">
+            <div id="header">
+                <h1>San Jose</h1>
+                <span>
+                    <label>Show temperature in: </label>
+                    <select name=temperature id="tempSel" onchange="convertCtoF()">
+                        <option value="Celsius" onclick="convertFtoC()">°C</option>
+                        <option value="Fahrenheit" onclick="convertCtoF()">°F</option>
+                    </select>
+                </span>
+            </div>
+            <div id="main">
+                <div class = "tempPanel">
+                    <p>Today</p>
+                    <img src="./assets/some_rain.png" alt="some rain">
+                    <div>some rain</div>  
+                    <div class = "tempsDisplay">
+                        <p class = "high temps">23.9°</p>
+                        <p class = "low temps">18.3°</p>
+                    </div>
+                </div>
+                <div class = "tempPanel">
+                    <p>Tomorrow</p>
+                    <img src="./assets/some_sun.png" alt="some rain">
+                    <div>some rain</div>  
+                    <div class = "tempsDisplay">
+                        <p class = "high temps">23.9°</p>
+                        <p class = "low temps">18.3°</p>
+                    </div>
+                </div>
+                <div class = "tempPanel">
+                    <p>Friday</p>
+                    <img src="./assets/some_clouds.png" alt="some rain">
+                    <div>some rain</div>  
+                    <div class = "tempsDisplay">
+                        <p class = "high temps">23.9°</p>
+                        <p class = "low temps">18.3°</p>
+                    </div>
+                </div>
+                <div class = "tempPanel">
+                    <p>Saturday</p>
+                    <img src="./assets/some_sun.png" alt="some rain">
+                    <div>some rain</div>  
+                    <div class = "tempsDisplay">
+                        <p class = "high temps">23.9°</p>
+                        <p class = "low temps">18.3°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cookies">
+            <img src="./assets/cookie.png" alt="cookies">
+            <div class = "cookAlert">
+                <h2>Stop! Cookie time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="google.com">Read more...</a></p>
+            </div>
+            <button type="submit" onclick="vanish(this)">I accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
