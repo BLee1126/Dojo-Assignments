@@ -18,11 +18,11 @@ function convertTemp(){
         for(var i = 0; i < sanjoseTemp.length; i++) { // goes through each value in sanjoseTemp
             for(var x = 0; x <= 1; x++){ // goes through the 2 values high and low temps
                 if(x == 0){
-                    document.getElementById(`high${i}`).innerText = Math.trunc(sanjoseTemp[i][x]);
+                    document.getElementById(`high${i}`).innerText = Math.trunc(sanjoseTemp[i][x])+"°";
                 }
     
                 else if (x == 1){
-                    document.getElementById(`low${i}`).innerText = Math.trunc(sanjoseTemp[i][x]);
+                    document.getElementById(`low${i}`).innerText = Math.trunc(sanjoseTemp[i][x])+"°";
                 }
             }
         }
@@ -31,11 +31,11 @@ function convertTemp(){
         for(var i = 0; i < sanjoseTemp.length; i++) { // goes through each value in sanjoseTemp
             for(var x = 0; x <= 1; x++){ // goes through the 2 values high and low temps
                 if(x == 0){
-                    document.getElementById(`high${i}`).innerText = Math.trunc(((sanjoseTemp[i][x]*9/5)+32));
+                    document.getElementById(`high${i}`).innerText = (Math.trunc(((sanjoseTemp[i][x]*9/5)+32))+"°");
                 }
     
                 else if (x == 1){
-                    document.getElementById(`low${i}`).innerText = Math.trunc(((sanjoseTemp[i][x]*9/5)+32));
+                    document.getElementById(`low${i}`).innerText = (Math.trunc(((sanjoseTemp[i][x]*9/5)+32))+"°");
                 }
             } 
         } 
