@@ -43,6 +43,7 @@ def iterateDictionary2(key, list):
     for item in list:
         print(item[key])
 
+iterateDictionary2('first_name', students)
 iterateDictionary2('last_name', students)
 
 #4
