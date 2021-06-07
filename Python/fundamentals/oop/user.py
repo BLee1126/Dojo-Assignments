@@ -1,32 +1,34 @@
+from bankaccount import BankAccount
 class User:
     bank_name = 'First National Dojo'
     def __init__(self, name, email_address):
         self.name = name
         self.email = email_address
-        self.account_balance = 0
-    def make_deposit(self, amount):
-        self.account_balance += amount
+        self.accounts = []
+        self.account = BankAccount(int_rate =0.02, balance=0)
+        self.accounts.append(self.account)
+    def make_deposit(self, amount, num):
+        self.accounts[num].balance += amount
         return self
-    def make_withdrawl(self, amount):
-        self.account_balance -= amount
+    def make_withdrawl(self, amount, num):
+        self.accounts[num].balance-= amount
         return self
-    def display_user_balance(self):
-        print(f'User: {self.name}, Balance: {self.account_balance}')
+    def display_user_balance(self, num):
+        print(f'User: {self.name}, Balance: {self.accounts[num].balance}')
         return self
-    def transfer_money(self, other, amount):
-        self.account_balance -= amount
-        other.account_balance += amount
+    def transfer_money(self, other, amount, num):
+        self.accounts[num].balance -= amount
+        other.account.balance += amount
         return self
-    
+    def create_account(self, deposit):
+        self.accounts.append(BankAccount(int_rate =0.02, balance=deposit))
+        return self
+    def show_accounts(self):
+        for account in self.accounts:
+            print(f'Account # {account} : {account.balance}')
+        return self
 brian = User('Brian Lee', 'blee1126@gmail.com')
 amy = User('Amy Christophersen', 'amy@gmail.com')
 brett = User('Brett Kim', 'bkim86@gmail.com')
 
-brian.make_deposit(100).make_deposit(200).make_deposit(300).make_withdrawl(100).display_user_balance()
-
-amy.make_deposit(200).make_deposit(400).make_withdrawl(50).make_withdrawl(75).display_user_balance()
-
-brett.make_deposit(700).make_withdrawl(25).make_withdrawl(300).make_withdrawl(100).display_user_balance()
-
-brian.transfer_money(amy, 300).display_user_balance()
-amy.display_user_balance()
+brian.make_deposit(300, 0).make_withdrawl(100, 0).display_user_balance(0).create_account(500).show_accounts()
