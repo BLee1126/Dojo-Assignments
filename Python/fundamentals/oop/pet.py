@@ -34,10 +34,6 @@ class Pet:
 class Cat(Pet):
     def __init__(self, name):
         super().__init__(name)
-        super().sleep()
-        super().eat()
-        super().play()
-        super().noise()
         self.tricks = ['cough up fur ball', 'bring back dead mouse', 'roll over']
         self.treats = ['doggie biscuits', 'kibbles n bits', 'dental snacks']
         self.food = ['human food', 'dry food', 'wet food']
@@ -45,10 +41,6 @@ class Cat(Pet):
 class Dog(Pet):
     def __init__(self, name):
         super().__init__(name)
-        super().sleep()
-        super().eat()
-        super().play()
-        super().noise()
         self.tricks = ['handshake', 'roll over', 'play dead']
         self.treats = ['doggie biscuits', 'kibbles n bits', 'dental snacks']
         self.food = ['human food', 'dry food', 'wet food']
@@ -56,10 +48,6 @@ class Dog(Pet):
 class Fish(Pet):
     def __init__(self, name):
         super().__init__(name)
-        super().sleep()
-        super().eat()
-        super().play()
-        super().noise()
         self.tricks = ['None']
         self.treats = ['blood worms', 'brine shrimp', 'snacks']
         self.food = ['flakes', 'pellets', 'freeze dried stuff']
