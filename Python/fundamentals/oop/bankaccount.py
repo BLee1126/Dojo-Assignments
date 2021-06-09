@@ -25,6 +25,7 @@ class BankAccount:
             return self
     @classmethod
     def display_all_accounts(cls):
+        # print(cls.all_accounts)
         for account in cls.all_accounts:
             print(f'Account:{account}, balance:{account.balance}, interest rate: {account.int_rate}')
 

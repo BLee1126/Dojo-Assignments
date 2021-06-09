@@ -32,3 +32,5 @@ amy = User('Amy Christophersen', 'amy@gmail.com')
 brett = User('Brett Kim', 'bkim86@gmail.com')
 
 brian.make_deposit(300, 0).make_withdrawl(100, 0).display_user_balance(0).create_account(500).show_accounts()
+
+BankAccount.display_all_accounts()

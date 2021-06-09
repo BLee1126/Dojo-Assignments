@@ -3,6 +3,7 @@ from product import Product
 
 bls = Store('BLS')
 
+
 beef = Product('Beef', 5.00, 'meat')
 chicken = Product('Chicken', 3.0, 'meat')
 cereal = Product('Cereal', 4.5, 'pantry')
