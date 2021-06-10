@@ -4,6 +4,10 @@ app = Flask(__name__)
 def boxes1():
     return render_template('index.html', times=3, color='lightskyblue')
 
+@app.route('/play')  
+def boxes1():
+    return render_template('index.html', times=3, color='lightskyblue')
+
 @app.route('/play/<int:x>') 
 def boxes2(x):
     return render_template("index.html", times = x, color='lightskyblue' )
