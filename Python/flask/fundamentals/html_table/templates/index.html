@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>HTML Table</title>
+</head>
+<body>
+    <table class = "table table-dark mx-auto mt-5" style="width: 35vw; height:50vh;">
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col"> Last Name</th>
+            </tr>
+        </thead>
+            {% for user in users %}
+            <tr>
+                <td>{{user['first_name']}}</td>
+                <td>{{user['last_name']}}</td>
+            </tr>
+            {% endfor %}
+    </table>
+
+</body>
+</html>
