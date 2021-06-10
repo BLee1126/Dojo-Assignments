@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+</head>
+<body >
+    <div id="container"style="display:flex; flex-direction: column; height: 100vh; width: 100vw;">
+        {% for each in range(0, y) %}
+        <div style="display:flex; justify-content:center; align-items: center; flex: 1">
+            {% for num in range(0, x) %}
+                {% if (num+each) % 2 == 0 %}
+                    <div  style="height: 100%; background-color:{{color1}}; flex: 1;"></div>
+                {% elif (num+each) % 2 != 0 %}
+                    <div  style="height: 100%; background-color:{{color2}}; flex: 1;"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
