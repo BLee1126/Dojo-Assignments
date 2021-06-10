@@ -17,6 +17,11 @@ def hi_name(name):
 def repeat_hi(word, num):
     return f'{str(word)}\n'*int(num)
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+
+    return 'No responses! Please try again.\n'
 
 
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
