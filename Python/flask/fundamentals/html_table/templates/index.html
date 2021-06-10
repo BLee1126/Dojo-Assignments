@@ -11,14 +11,16 @@
     <table class = "table table-dark mx-auto mt-5" style="width: 35vw; height:50vh;">
         <thead>
             <tr>
-                <th scope="col">First Name</th>
+                <th scope="col"> First Name</th>
                 <th scope="col"> Last Name</th>
+                <th scope="col"> Full Name</th>
             </tr>
         </thead>
             {% for user in users %}
             <tr>
                 <td>{{user['first_name']}}</td>
                 <td>{{user['last_name']}}</td>
+                <td>{{user['first_name']}} {{user['last_name']}}</td>
             </tr>
             {% endfor %}
     </table>
