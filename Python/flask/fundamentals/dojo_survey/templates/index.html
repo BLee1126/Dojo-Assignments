@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <form action="/result" method='post'class = 'form'>
+            <div class = "query">
+                <p> Name </p>
+                <input type='text' name='name'class = "black_border">
+            </div>
+            <div class = "query">
+                <label for="location">Dojo Location: </label>
+                <select name="location" class = "black_border">
+                    <option value="bellevue">Bellevue</option>
+                    <option value="boise">Boise</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="dallas">Dallas</option>
+                    <option value="la">Los Angeles</option>
+                    <option value="san_jose">San Jose</option>
+                    <option value="online">Online</option>
+                </select>
+            </div>
+            <div class = "query">
+                <label for="language">Favorite Language </label>
+                <select name="language" class = "black_border">
+                    <option value="python">Python</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="c#">C#</option>
+                    <option value="java">Java</option>
+                    <option value="mean">Mean</option>
+                    <option value="mern">Mern</option>
+                </select>
+            </div>
+            <label for="comment" class = "query">Comment (optional)</label>
+            <input type="text"  class = "black_border comment">
+            <div id="button_div"><button class = "submit">Submit</button></div>
+        
+        </form>
+
+
+        </div>
+    </div>
+</body>
+</html>
