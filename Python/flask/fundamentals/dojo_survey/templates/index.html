@@ -11,10 +11,10 @@
 <body>
     <div class="container">
         <div class="card">
-            <form action="/result" method='post'class = 'form'>
+            <form action="/result" method='POST' class = 'form'>
             <div class = "query">
                 <p> Name </p>
-                <input type='text' name='name'class = "black_border">
+                <input type='text' name='name' class = "black_border">
             </div>
             <div class = "query">
                 <label for="location">Dojo Location: </label>
@@ -40,7 +40,7 @@
                 </select>
             </div>
             <label for="comment" class = "query">Comment (optional)</label>
-            <input type="text"  class = "black_border comment">
+            <input type="text"  class = "black_border comment" name = 'comment'>
             <div id="button_div"><button class = "submit">Submit</button></div>
         
         </form>
