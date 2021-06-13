@@ -1,0 +1,59 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    transition: 1800;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.query {
+    margin: 2em auto;
+    flex: 1;
+    text-align: center;
+}
+
+.response {
+    flex: 3;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black 2px solid;
+}
+
+.response p {
+    color: white;
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+.form {
+    gap: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin-bottom: .5em;
+    border-radius: 5px;
+    border: solid black 2px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
