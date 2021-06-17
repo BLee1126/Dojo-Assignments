@@ -1,0 +1,30 @@
+1
+INSERT INTO users (first_name, last_name, email) VALUES ('Brian', 'Lee', 'b@email.com');
+INSERT INTO users (first_name, last_name, email) VALUES ('Matt', 'Dlugy', 'm@email.com');
+INSERT INTO users (first_name, last_name, email) VALUES ('Kelvin', 'Collado', 'k@email.com');
+
+2
+SELECT * FROM users
+
+3
+SELECT first_name, last_name, email FROM users
+WHERE email LIKE 'b@email.com';
+
+4
+SELECT first_name, last_name, email FROM users
+WHERE id = 3
+
+5
+UPDATE users SET last_name = 'Pancakes'
+WHERE id = 3;
+
+6
+DELETE FROM users
+WHERE id = 2;
+
+7
+SELECT * FROM users 
+ORDER BY first_name
+
+8SELECT * FROM users 
+ORDER BY first_name DESC

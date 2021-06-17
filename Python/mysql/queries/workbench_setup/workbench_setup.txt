@@ -1,0 +1,16 @@
+USING THE lead_gen_business
+
+
+SELECT clients.first_name, clients.last_name, billing.amount, billing.charged_datetime
+FROM clients
+JOIN billing ON clients.id = billing.clients_id
+
+INSERT INTO clients (first_name, last_name, email, joined_datetime) 
+VALUES('Brian', 'Lee', 'randomemail@email.com', NOW());
+
+UPDATE clients 
+SET first_name = 'Michael', last_name = 'Jordan'
+WHERE id = 11;
+ 
+DELETE FROM clients
+WHERE id = 11

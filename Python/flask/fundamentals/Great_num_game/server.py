@@ -5,18 +5,21 @@ app.secret_key = '4984we654asdf65a4s4gt86agdsafa'
 
 @app.route('/', methods=['POST', 'GET'])
 def start():
+
+
     if 'color' not in session:
         session['color'] = 'blue'
     else: 
         pass    
     if 'counter' not in session:
         session['counter'] = 0
-    elif session['counter'] == 5:
-        session['response'] = 'You Lose'
-    elif 'counter' in session:
-        session['counter'] += 1
+    elif session['counter'] > 4 and int(session['guess_num']) != session['answer']:
+        session['response'] = 'You Lose!'
+    elif session['counter'] > 4 and int(session['guess_num']) == session['answer']:
+        session['response'] = 'You Win!'
     else:
         pass
+    print(session['counter'])
     if 'answer' not in session:
         session['answer'] = random.randint(1,100)
     else: 
@@ -25,6 +28,8 @@ def start():
         session['response'] = 'Make a Guess!'
     else:
         pass
+    if 'guess_num' in session:
+        session['counter'] += 1
     print(session['answer'])
     return render_template('/index.html', response=session['response'], counter = session['counter'], color = session['color'])
 
@@ -32,6 +37,7 @@ def start():
 def calculate():
 
     session['guess_num'] = request.form['guess_num']
+    print('this is' + session['guess_num'])
 
     if int(session['guess_num']) == session['answer']:
         session['response']='You got it right!'
@@ -47,7 +53,7 @@ def calculate():
         session['response']='Guess Lower!'
         session['color'] = 'red'
         return redirect('/', )
-
+    
     return redirect('/', response='Logic Broken')
 
 @app.route('/reset', methods = ['POST'])
