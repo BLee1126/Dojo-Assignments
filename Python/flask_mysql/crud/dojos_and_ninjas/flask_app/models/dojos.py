@@ -22,10 +22,10 @@ class Dojo():
         return dojos
 
     @classmethod
-    def get_one(cls, dojo_id):
-        query = f"SELECT * FROM dojos WHERE id = {dojo_id};"
+    def get_one(cls, data):
+        query = "SELECT * FROM dojos WHERE id = %(id)s;"
         connection = connectToMySQL('dojos_and_ninjas')
-        results = connection.query_db(query)[0]
+        results = connection.query_db(query, data)[0]
         return results
 
     @classmethod

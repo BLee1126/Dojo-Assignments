@@ -51,7 +51,7 @@ def ninjas_in_dojo(dojo_id):
         "id": dojo_id
     }
     dojo = Dojo.ninjas_in(data)
-    dojo_name = Dojo.get_one(dojo_id)
+    dojo_name = Dojo.get_one(data)
 
     return render_template('dojo_ninjas.html', dojo=dojo, dojo_name=dojo_name)
 
