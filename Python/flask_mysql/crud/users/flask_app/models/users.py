@@ -12,16 +12,16 @@ class User:
     # Now we use class methods to query our database
     @classmethod
     def get_all(cls):
-        query = "SELECT * FROM users;"
-        results = connectToMySQL('users').query_db(query)
+        query = "SELECT * FROM user;"
+        results = connectToMySQL('user').query_db(query)
         users = []
         for user in results:
             users.append( cls(user) )
-        return users
+        return user
     @classmethod
     def save(cls, data ):
-        query = "INSERT INTO users ( first_name , last_name , email , created_at, updated_at ) VALUES ( %(first_name)s , %(last_name)s , %(email)s , NOW() , NOW() );"
-        return connectToMySQL('users').query_db( query, data )
+        query = "INSERT INTO user ( first_name , last_name , email , created_at, updated_at ) VALUES ( %(first_name)s , %(last_name)s , %(email)s , NOW() , NOW() );"
+        return connectToMySQL('user').query_db( query, data )
 
     @classmethod
     def delete(cls, data):
