@@ -22,7 +22,8 @@ def create():
     data = {
         'name': request.form['name']
     }
-    Dojo.create_dojo(data)
+    id = Dojo.create_dojo(data)
+    print(id)
     return redirect('/')
 
 
@@ -50,6 +51,7 @@ def ninjas_in_dojo(dojo_id):
         "id": dojo_id
     }
     dojo = Dojo.ninjas_in(data)
+    dojo_name = Dojo.get_one(dojo_id)
 
-    return render_template('dojo_ninjas.html', dojo=dojo)
+    return render_template('dojo_ninjas.html', dojo=dojo, dojo_name=dojo_name)
 

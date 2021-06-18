@@ -22,8 +22,15 @@ class Dojo():
         return dojos
 
     @classmethod
+    def get_one(cls, dojo_id):
+        query = f"SELECT * FROM dojos WHERE id = {dojo_id};"
+        connection = connectToMySQL('dojos_and_ninjas')
+        results = connection.query_db(query)[0]
+        return results
+
+    @classmethod
     def create_dojo(cls, data ):
-        query = 'INSERT INTO dojos(name, created_at, updated_at) VALUES(%(name)s, NOW(), NOW(),);'
+        query = 'INSERT INTO dojos(name, created_at, updated_at) VALUES(%(name)s, NOW(), NOW());'
         
         return connectToMySQL('dojos_and_ninjas').query_db( query, data )
 

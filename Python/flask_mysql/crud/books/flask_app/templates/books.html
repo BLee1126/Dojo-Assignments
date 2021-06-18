@@ -21,7 +21,7 @@
             <h1>All Dojos</h1>
             <div style= 'border: 2px solid black;'>
                 {% for dojo in dojos %}
-                <a href = '/dojos/{{dojo.id}}/show'>{{dojo.name}}</a><br>
+                <a href = '/dojos/{{dojo.id}}'>{{dojo.name}}</a><br>
                 {% endfor %}
             </div>
             <a href="/ninja/add">Add Ninja</a>
