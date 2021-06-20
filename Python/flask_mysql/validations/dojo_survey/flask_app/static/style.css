@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.card {
+    width: 20%;
+    height: 40%;
+    gap: 3em;
+    margin: 5em auto;
+    border: 2px black solid;
+    background-color: antiquewhite;
+    padding: 2em;
+}
+
+.card form {
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.query {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+button {
+    background-color: darkcyan;
+    color: white;
+    width: 5em;
+    border-radius: 5px;
+}

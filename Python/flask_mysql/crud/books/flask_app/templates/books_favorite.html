@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{book.title}}</title>
+</head>
+<body>
+    <div id="book_list">
+        <h1>{{book.title}}</h1>
+        <h3>Favorited by:</h3>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Names</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for author in favorited %}
+                <tr>
+                    <td>{{author.name}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div id="add_book">
+        <form style= 'width: 35vw; margin: 0 auto; display: flex; flex-direction: column; gap: 1em;' method="POST" action='/books/{{book.id}}/add_author'>
+            <select class="custom-select" name='author_id'>
+                {% for author in authors %}
+                    <option value="{{author.id}}">{{author.name}}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value = 'Add to Favorites'>
+        </form>
+    </div>
+
+    <a href="/">Home</a>
+</body>
+</html>

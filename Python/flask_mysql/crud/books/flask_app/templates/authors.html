@@ -10,21 +10,21 @@
 <body>
     <div class="container" style="display: flex; justify-content: space-around; align-items: center;">
         <div style= 'display: flex; flex-direction: column; justify-content: space-between; align-items: center; gap: 2em;'>
-            <h1>New Dojo</h1>
-            <form method='POST' action="/dojos/create" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1em;" >
+            <h1>New Author</h1>
+            <form method='POST' action="/authors/create" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1em;" >
                 <input type="text" name='name'>
                 <input type="submit" value = 'Create'>
             </form>
 
         </div>
         <div>
-            <h1>All Dojos</h1>
+            <h1>All Authors</h1>
             <div style= 'border: 2px solid black;'>
-                {% for dojo in dojos %}
-                <a href = '/dojos/{{dojo.id}}'>{{dojo.name}}</a><br>
+                {% for author in authors %}
+                <a href = '/authors/{{author.id}}/favorites'>{{author.name}}</a><br>
                 {% endfor %}
             </div>
-            <a href="/ninja/add">Add Ninja</a>
+            <a href="/books/add">Add Book</a>
         </div>
     </div>
     
