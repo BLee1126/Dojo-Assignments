@@ -1,7 +1,7 @@
 from flask_app import app
 from flask import render_template,redirect,request
 
-# from flask_app.models.ninjas import Ninja
+from flask_app.models.ninjas import Ninja
 # from flask_app.models.dojos import Dojo
 
 
@@ -11,15 +11,15 @@ def index():
 
 @app.route('/result', methods=['POST'])
 def results():
-    print(request.form)
+    print('look at me!!!!!', request.form)
     data = {
     'name' : request.form['name'],
     'location' : request.form['location'],
-    'language' : request.form['language'],
     'comment' : request.form['comment']
     }
-
-
-
-    # return render_template("results.html", tname = tname, tloc = tloc, tlang = tlang, tcom=tcom, tprog = tprog, tpet1=tpet1, tpet2=tpet2, tpet3=tpet3)
+    results = Ninja.validate_ninja(data)
+    if results:
+        return render_template("results.html", data=data)
+    else:
+        return redirect('/')
     return render_template("results.html", data=data)

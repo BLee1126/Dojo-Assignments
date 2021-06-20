@@ -12,24 +12,27 @@
         <div class="card">
             <h1>Submitted Info</h1>
             <div class = "resultinfo">
-                <p>Name: {{tname}}</p>
+                <p>Name: {{data['name']}}</p>
             </div>
             <div class = "resultinfo">
-                <p>Dojo Location: {{tloc}}</p>
+                <p>Dojo Location: {{data['location']}}</p>
             </div>
             <div class = "resultinfo">
-                <p>Favorite Language: {{tlang}}</p>
+                <p>Favorite Language: {{data['language']}}</p>
             </div>
             <div class = "resultinfo">
-                <p>Program: {{tprog}}</p>
+                <p>Comment: {{data['comment']}}</p>
             </div>
-            <div class = "resultinfo">
-                <p>Pet(s): {{tpets}}</p>
-            </div>
-            <div class = "resultinfo">
-                <p>Comment: {{tcom}}</p>
-            </div>
-
+            {% with messages = get_flashed_messages() %}
+            <!-- declare a variable called messages -->
+        
+            <!-- check if there are any messages -->
+            {% for message in messages %}
+            <!-- loop through the messages -->
+            <p>{{message}}</p> <!-- display each message in a paragraph tag -->
+            {% endfor %}
+        
+            {% endwith %}
         </div>
     </div>
 </body>

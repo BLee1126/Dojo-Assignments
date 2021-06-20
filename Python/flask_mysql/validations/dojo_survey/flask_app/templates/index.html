@@ -28,12 +28,21 @@
                     <option value="online">Online</option>
                 </select>
             </div>
-            <label for="comment" class = "query">Comment (optional)</label>
+            <label for="comment" class = "query">Comment (NOT optional)</label>
             <input type="text"  class = "black_border comment" name = 'comment'>
             <div id="button_div"><button class = "submit">Submit</button></div>
         
         </form>
-
+        {% with messages = get_flashed_messages() %}
+        <!-- declare a variable called messages -->
+    
+        <!-- check if there are any messages -->
+        {% for message in messages %}
+        <!-- loop through the messages -->
+        <p>{{message}}</p> <!-- display each message in a paragraph tag -->
+        {% endfor %}
+    
+        {% endwith %}
 
         </div>
     </div>
