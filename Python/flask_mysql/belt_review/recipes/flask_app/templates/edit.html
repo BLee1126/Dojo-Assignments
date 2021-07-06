@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Recipe</h1>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/reset">Logout</a>
+    
+    <form action="/recipes/update/{{recipe.id}}" method='POST'>
+        Name: <input type="text" name='name' value='{{recipe.name}}'>
+        Description <input type="textarea" name='description' value='{{recipe.description}}'>
+        Instructions: <input type="textarea" name='instructions'value = '{{recipe.instructions}}'>
+        Date Made On: <input type="date" name='date_made' value='{{recipe.date_made}}'>
+        Under 30 Minutes? 
+        Yes <input type="radio" name='thirty_minutes' value='1' value='{{recipe.thiry_minutes}}'>
+        No <input type="radio" name='thirty_minutes' value='0'value='{{recipe.thiry_minutes}}'>
+        <input type="submit" value='Update'>
+    </form>
+    {% with messages = get_flashed_messages() %}
+    <!-- declare a variable called messages -->
+
+    <!-- check if there are any messages -->
+    {% for message in messages %}
+    <!-- loop through the messages -->
+    <p>{{message}}</p> <!-- display each message in a paragraph tag -->
+    {% endfor %}
+
+    {% endwith %}
+</body>
+</html>
