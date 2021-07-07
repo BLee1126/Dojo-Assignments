@@ -1,0 +1,41 @@
+.header {
+    width: 90vw;
+    height: 15vh;
+    background-color: green;
+    margin: 0 auto;
+}
+.navigation {
+    width: 20vw;
+    height: 60vh;
+    background-color: lightblue;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2em;
+    margin-left: 3em;
+}
+
+.main {
+    width: 65vw;
+    height: 75vh;
+    background-color: red;
+    display: inline-block;
+    margin: 2em;
+    padding: 1.5em;
+    margin-left: -1em;
+}
+
+.subcontents {
+    background-color: yellow;
+    display: inline-block;
+    width: 27%;
+    height: 60%;
+    gap: 1.5em;
+    
+}
+
+.advertisement {
+    background-color: purple;
+    height: 30%;
+    width: 90%;
+    margin: 2em auto;
+}
