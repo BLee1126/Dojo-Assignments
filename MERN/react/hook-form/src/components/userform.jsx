@@ -7,17 +7,27 @@ const UserForm = (props) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");  
     const [confirmpassword, setConfirmPassword] = useState("");  
+    const [hasBeenSubmitted, setHasBeenSubmitted] = useState(false);
     
     const createUser = (e) => {
         e.preventDefault();
         const newUser = { firstname, lastname, email, password, confirmpassword };
         console.log("Welcome", newUser);
+        setHasBeenSubmitted( true );
     };
-
+    const formMessage = () => {
+        if( hasBeenSubmitted ) {
+            return "Thank you for submitting the form!";
+        } else {
+            return "Welcome, please submit the form";
+	}
+    };
     
     return(
         <div className="container">
+            
             <form onSubmit={ createUser }>
+                <h3>{ formMessage() }</h3>
                 <div>
                     <label>First name: </label>
                     <input type="text" onChange={ (e) => setFirstname(e.target.value) } />
