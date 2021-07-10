@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.boxes {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
