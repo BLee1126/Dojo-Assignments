@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.lists {
+  border : 2px solid black;
+  width: 20%;
+  margin: 0 auto;
+}
