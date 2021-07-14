@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    gap: 2em;
+}
+
+.navBarform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
