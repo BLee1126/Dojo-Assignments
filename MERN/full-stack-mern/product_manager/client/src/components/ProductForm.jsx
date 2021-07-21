@@ -4,7 +4,7 @@ const ProductForm = props => {
     //keep track of what is being typed via useState hook
     const [title, setTitle] = useState(""); 
     const [price, setPrice] = useState(0);
-    const [description, setDescription] = useState(0);
+    const [description, setDescription] = useState('');
     //handler when the form is submitted
     const onSubmitHandler = e => {
         //prevent default behavior of the submit
@@ -23,15 +23,15 @@ const ProductForm = props => {
         <form onSubmit={onSubmitHandler}>
             <div>
                 <label>Title</label><br/>
-                <input type="text" onChange={(e)=>setTitle(e.target.value)} value={title}/>
+                <input type="text" onChange={(e)=>setTitle(e.target.value)} value={title} placeholder ='Title goes here'/>
             </div>
             <div>
                 <label>Price</label><br/>
-                <input type="text" onChange={(e)=>setPrice(e.target.value)} value={price}/>
+                <input type="text" onChange={(e)=>setPrice(e.target.value)} value={price} />
             </div>
             <div>
                 <label>Description</label><br/>
-                <input type="text" onChange={(e)=>setDescription(e.target.value)} value={description}/>
+                <input type="text" onChange={(e)=>setDescription(e.target.value)} value={description} placeholder ='Description goes here'/>
             </div>
             <input type="submit"/>
         </form>

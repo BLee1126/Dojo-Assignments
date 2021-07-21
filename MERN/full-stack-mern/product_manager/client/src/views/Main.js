@@ -6,20 +6,24 @@ import axios from 'axios'
 const App = () => {
     const [product, setProduct] = useState([]);
     const [loaded, setLoaded] = useState(false);
+    
 
     useEffect(()=>{
         axios.get('http://localhost:8000/api/products')
             .then(res => {
                 setProduct(res.data);
-                setLoaded(true);
+                setLoaded(!loaded);
             });
-    }, [])
+    }, [loaded])
+    const removeFromDom = productId => {
+        setProduct(product.filter(product => product._id !== productId))
+    }
 
     return (
         <div>
             <h1>Product Manager</h1>
             <ProductForm />
-            <ProductList products = {product}/>
+            <ProductList products = {product} removeFromDom={removeFromDom}/>
         </div>
     )
 }
