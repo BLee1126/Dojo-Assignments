@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProductForm from '../components/ProductForm';
+import ProductAdd from '../components/ProductAdd';
 import ProductList from '../components/ProductList';
 import axios from 'axios'
 
@@ -22,7 +22,7 @@ const App = () => {
     return (
         <div>
             <h1>Product Manager</h1>
-            <ProductForm />
+            <ProductAdd />
             <ProductList products = {product} removeFromDom={removeFromDom}/>
         </div>
     )

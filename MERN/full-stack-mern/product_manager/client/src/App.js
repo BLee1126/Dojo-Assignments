@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <Router>
         <HomePage path='/' />
-        <Main path="products/"/>
-        <Detail path="products/:_id" />
-        <Update path="products/update/:_id"/>
+        <Main path="/products/"/>
+        <Detail path="/products/:_id" />
+        <Update path="/products/update/:_id"/>
       </Router>
     </div>
   );

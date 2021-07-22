@@ -1,40 +1,37 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 const ProductForm = props => {
-    //keep track of what is being typed via useState hook
-    const [title, setTitle] = useState(""); 
-    const [price, setPrice] = useState(0);
-    const [description, setDescription] = useState('');
-    //handler when the form is submitted
-    const onSubmitHandler = e => {
-        //prevent default behavior of the submit
-        e.preventDefault();
-        //make a post request to create a new person
-        axios.post('http://localhost:8000/api/products/create', {
-            title,
-            price,
-            description
-        })
-            .then(res=>console.log(res))
-            .catch(err=>console.log(err))
-    }
-    //onChange to update title, price, description
+    const {handleSubmit, onChangeHandler, myForm, errors} = props;
+
     return (
-        <form onSubmit={onSubmitHandler}>
-            <div>
-                <label>Title</label><br/>
-                <input type="text" onChange={(e)=>setTitle(e.target.value)} value={title} placeholder ='Title goes here'/>
-            </div>
-            <div>
-                <label>Price</label><br/>
-                <input type="text" onChange={(e)=>setPrice(e.target.value)} value={price} />
-            </div>
-            <div>
-                <label>Description</label><br/>
-                <input type="text" onChange={(e)=>setDescription(e.target.value)} value={description} placeholder ='Description goes here'/>
-            </div>
-            <input type="submit"/>
-        </form>
+        <div className="form">
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>Title</label><br/>
+                    <input type="text" name='title' onChange={onChangeHandler} value={myForm.title}/>
+                </div>
+                {
+                        errors.title ? <span style={{color:'red'}}>{errors.title.message}</span> : ""
+                }
+                <div>
+                    <label>Price</label><br/>
+                    <input type="text" name='price' onChange={onChangeHandler} value={myForm.price}/>
+                </div>
+                {
+                        errors.price ? <span style={{color:'red'}}>{errors.price.message}</span> : ""
+                }
+                <div>
+                    <label>Description</label><br/>
+                    <input type="text" name='description' onChange={onChangeHandler} value={myForm.description}/>
+                </div>
+                {
+                        errors.description ? <span style={{color:'red'}}>{errors.description.message}</span> : ""
+                    }
+                
+                <input type="submit"/>
+            </form>
+    
+        </div>
     )
 }
 
