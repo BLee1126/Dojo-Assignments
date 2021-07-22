@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from '@reach/router'
-import axios from 'axios';
 import DeleteButton from './DeleteBut';
 
 const ProductList = props => {
