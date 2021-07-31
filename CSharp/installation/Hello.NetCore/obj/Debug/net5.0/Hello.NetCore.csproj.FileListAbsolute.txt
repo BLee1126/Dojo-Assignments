@@ -1,0 +1,16 @@
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\bin\Debug\net5.0\Hello.NetCore.exe
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\bin\Debug\net5.0\Hello.NetCore.deps.json
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\bin\Debug\net5.0\Hello.NetCore.runtimeconfig.json
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\bin\Debug\net5.0\Hello.NetCore.runtimeconfig.dev.json
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\bin\Debug\net5.0\Hello.NetCore.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\bin\Debug\net5.0\ref\Hello.NetCore.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\bin\Debug\net5.0\Hello.NetCore.pdb
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\obj\Debug\net5.0\Hello.NetCore.csproj.AssemblyReference.cache
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\obj\Debug\net5.0\Hello.NetCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\obj\Debug\net5.0\Hello.NetCore.AssemblyInfoInputs.cache
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\obj\Debug\net5.0\Hello.NetCore.AssemblyInfo.cs
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\obj\Debug\net5.0\Hello.NetCore.csproj.CoreCompileInputs.cache
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\obj\Debug\net5.0\Hello.NetCore.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\obj\Debug\net5.0\ref\Hello.NetCore.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\obj\Debug\net5.0\Hello.NetCore.pdb
+C:\Users\blee1\desktop\dojo assignments\csharp\installation\Hello.NetCore\obj\Debug\net5.0\Hello.NetCore.genruntimeconfig.cache
