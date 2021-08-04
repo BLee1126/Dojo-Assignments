@@ -1,0 +1,16 @@
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\obj\Debug\net5.0\Deck-Of-Cards.csproj.AssemblyReference.cache
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\obj\Debug\net5.0\Deck-Of-Cards.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\obj\Debug\net5.0\Deck-Of-Cards.AssemblyInfoInputs.cache
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\obj\Debug\net5.0\Deck-Of-Cards.AssemblyInfo.cs
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\obj\Debug\net5.0\Deck-Of-Cards.csproj.CoreCompileInputs.cache
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\bin\Debug\net5.0\Deck-Of-Cards.exe
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\bin\Debug\net5.0\Deck-Of-Cards.deps.json
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\bin\Debug\net5.0\Deck-Of-Cards.runtimeconfig.json
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\bin\Debug\net5.0\Deck-Of-Cards.runtimeconfig.dev.json
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\bin\Debug\net5.0\Deck-Of-Cards.dll
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\bin\Debug\net5.0\ref\Deck-Of-Cards.dll
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\bin\Debug\net5.0\Deck-Of-Cards.pdb
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\obj\Debug\net5.0\Deck-Of-Cards.dll
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\obj\Debug\net5.0\ref\Deck-Of-Cards.dll
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\obj\Debug\net5.0\Deck-Of-Cards.pdb
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Deck-Of-Cards\obj\Debug\net5.0\Deck-Of-Cards.genruntimeconfig.cache

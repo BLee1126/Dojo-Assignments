@@ -1,0 +1,16 @@
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\bin\Debug\net5.0\Hungry-Ninja.exe
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\bin\Debug\net5.0\Hungry-Ninja.deps.json
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\bin\Debug\net5.0\Hungry-Ninja.runtimeconfig.json
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\bin\Debug\net5.0\Hungry-Ninja.runtimeconfig.dev.json
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\bin\Debug\net5.0\Hungry-Ninja.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\bin\Debug\net5.0\ref\Hungry-Ninja.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\bin\Debug\net5.0\Hungry-Ninja.pdb
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\obj\Debug\net5.0\Hungry-Ninja.csproj.AssemblyReference.cache
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\obj\Debug\net5.0\Hungry-Ninja.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\obj\Debug\net5.0\Hungry-Ninja.AssemblyInfoInputs.cache
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\obj\Debug\net5.0\Hungry-Ninja.AssemblyInfo.cs
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\obj\Debug\net5.0\Hungry-Ninja.csproj.CoreCompileInputs.cache
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\obj\Debug\net5.0\Hungry-Ninja.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\obj\Debug\net5.0\ref\Hungry-Ninja.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\obj\Debug\net5.0\Hungry-Ninja.pdb
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\hungry-ninja\obj\Debug\net5.0\Hungry-Ninja.genruntimeconfig.cache

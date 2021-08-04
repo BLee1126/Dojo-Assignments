@@ -1,0 +1,16 @@
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\bin\Debug\net5.0\Human.exe
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\bin\Debug\net5.0\Human.deps.json
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\bin\Debug\net5.0\Human.runtimeconfig.json
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\bin\Debug\net5.0\Human.runtimeconfig.dev.json
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\bin\Debug\net5.0\Human.dll
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\bin\Debug\net5.0\ref\Human.dll
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\bin\Debug\net5.0\Human.pdb
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\obj\Debug\net5.0\Human.csproj.AssemblyReference.cache
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\obj\Debug\net5.0\Human.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\obj\Debug\net5.0\Human.AssemblyInfoInputs.cache
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\obj\Debug\net5.0\Human.AssemblyInfo.cs
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\obj\Debug\net5.0\Human.csproj.CoreCompileInputs.cache
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\obj\Debug\net5.0\Human.dll
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\obj\Debug\net5.0\ref\Human.dll
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\obj\Debug\net5.0\Human.pdb
+C:\Users\blee1\Desktop\Dojo Assignments\CSharp\oop\Human\obj\Debug\net5.0\Human.genruntimeconfig.cache
