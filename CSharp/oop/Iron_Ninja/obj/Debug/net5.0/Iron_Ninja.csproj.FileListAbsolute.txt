@@ -1,0 +1,16 @@
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\bin\Debug\net5.0\Iron_Ninja.exe
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\bin\Debug\net5.0\Iron_Ninja.deps.json
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\bin\Debug\net5.0\Iron_Ninja.runtimeconfig.json
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\bin\Debug\net5.0\Iron_Ninja.runtimeconfig.dev.json
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\bin\Debug\net5.0\Iron_Ninja.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\bin\Debug\net5.0\ref\Iron_Ninja.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\bin\Debug\net5.0\Iron_Ninja.pdb
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\obj\Debug\net5.0\Iron_Ninja.csproj.AssemblyReference.cache
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\obj\Debug\net5.0\Iron_Ninja.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\obj\Debug\net5.0\Iron_Ninja.AssemblyInfoInputs.cache
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\obj\Debug\net5.0\Iron_Ninja.AssemblyInfo.cs
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\obj\Debug\net5.0\Iron_Ninja.csproj.CoreCompileInputs.cache
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\obj\Debug\net5.0\Iron_Ninja.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\obj\Debug\net5.0\ref\Iron_Ninja.dll
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\obj\Debug\net5.0\Iron_Ninja.pdb
+C:\Users\blee1\desktop\dojo assignments\csharp\oop\Iron_Ninja\obj\Debug\net5.0\Iron_Ninja.genruntimeconfig.cache
