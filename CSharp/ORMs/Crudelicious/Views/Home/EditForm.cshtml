@@ -1,0 +1,41 @@
+@model Dish
+
+<div id="container">
+    <h1>Build a Dish</h1>
+
+    <form asp-controller="Home" asp-action="SubmitEdit" method="post">
+        <input type="hidden" asp-for="DishId">
+
+        <div id="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control">
+            <span class="alert-danger" asp-validation-for="Name"></span>
+        </div>
+
+        <div id="form-group">
+            <label asp-for="ChefName"></label>
+            <input asp-for="ChefName" class="form-control">
+            <span class="alert-danger" asp-validation-for="ChefName"></span>
+        </div>
+
+        <div id="form-group">
+            <label asp-for="Calories"></label>
+            <input asp-for="Calories" class="form-control">
+            <span class="alert-danger" asp-validation-for="Calories"></span>
+        </div>
+
+        <div id="form-group">
+            <label asp-for="Tastiness"></label>
+            <input asp-for="Tastiness" class="form-control">
+            <span class="alert-danger" asp-validation-for="Tastiness"></span>
+        </div>
+
+        <div id="form-group">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" class="form-control">
+            <span class="alert-danger" asp-validation-for="Description"></span>
+        </div>
+
+        <input type="submit" class="btn btn-lg btn-success mt-5">
+    </form>
+</div>

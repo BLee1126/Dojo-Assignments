@@ -1,16 +1,70 @@
+
 <div class="card">
     <div class="card-header bg-dark text-light">Level 2</div>
     <div class="card-body">
         <p>Using the SportsORM, complete all the following queries and show their results on Level2.cshtml.</p>
         <ol>
             <li>...all teams in the Atlantic Soccer Conference</li>
+            @foreach (League league in ViewBag.Problem1)
+            {
+                @foreach (Team team in league.Teams)
+                {
+                    <p>@team.TeamName</p>
+                }
+                
+            }
             <li>...all (current) players on the Boston Penguins (Hint: Boston is the Location, Penguins is the TeamName)</li>
+            @foreach (Team team in ViewBag.Problem2)
+            {
+                @foreach (Player player in team.CurrentPlayers)
+                {
+                    <p>@player.FirstName @player.LastName</p>
+                }
+                
+            }
             <li>...all (current) players in the International Collegiate Baseball Conference</li>
+
+                @foreach (Team team in ViewBag.Problem3)
+                {
+                    @foreach (Player player in team.CurrentPlayers)
+                    {
+                        <p>@player.FirstName @player.LastName</p>
+                    }
+                }
+                
+
             <li>...all (current) players in the American Conference of Amateur Football with last name "Lopez"</li>
+            @foreach (Player player in ViewBag.Problem4)
+            {
+                {
+                    <p>@player.FirstName @player.LastName</p>
+                }
+            }
+
             <li>...all football players</li>
+            @foreach (Team team in ViewBag.Problem5)
+            {
+                @foreach (Player player in team.CurrentPlayers)
+                {
+                    <p>@player.FirstName @player.LastName</p>
+                }
+                
+            }
             <li>...all teams with a (current) player named "Sophia"</li>
+            @foreach (Player player in ViewBag.Problem6)
+            {
+                <p>@player.FirstName @player.LastName</p>
+            }
             <li>...all leagues with a (current) player named "Sophia"</li>
+            @foreach (Player player in ViewBag.Problem7)
+            {
+                <p>@player.CurrentTeam.CurrLeague.Name</p>
+            }
             <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders</li>
+            @foreach (Player player in ViewBag.Problem8)
+            {
+                <p>@player.FirstName @player.LastName</p>
+            }
         </ol>
     </div>
 </div>

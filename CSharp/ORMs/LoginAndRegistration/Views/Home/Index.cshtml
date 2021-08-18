@@ -1,0 +1,36 @@
+﻿@model User
+
+<div class = "header">
+    <h1>Register to this Cool Site!</h1>
+    <a href="/users/login">Login Here!</a>
+</div>
+<div>
+    <form asp-controller = "Home" asp-action = "register" method = "post">
+        <div id="form-group">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control">
+            <span class="alert-danger" asp-validation-for="FirstName"></span>
+        </div>
+        <div id="form-group">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control">
+            <span class="alert-danger" asp-validation-for="LastName"></span>
+        </div>
+        <div id="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control">
+            <span class="alert-danger" asp-validation-for="Email"></span>
+        </div>
+        <div id="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" class="form-control">
+            <span class="alert-danger" asp-validation-for="Password"></span>
+        </div>
+            <div id="form-group">
+            <label asp-for="Confirm"></label>
+            <input asp-for="Confirm" class="form-control">
+            <span class="alert-danger" asp-validation-for="Confirm"></span>
+        </div>  
+        <input type="submit" class="btn btn-lg btn-success mt-5">
+    </form>
+</div>

@@ -1,0 +1,33 @@
+﻿<div>
+    <h1>Welcome to CRUDelicious</h1>
+</div>
+<div>
+    <h4>Check out some recent dishes!</h4>
+    <a href="/form">Add a Dish</a>
+</div>
+<div>
+    <table class="table table-dark table-hover">
+        <tr>
+            <th>Dish ID</th>
+            <th>Name</th>
+            <th>Chef Name</th>
+            <th>Calories</th>
+            <th>Tastiness</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+
+        @foreach(Dish dish in ViewBag.AllDishes)
+        {
+            <tr>
+                <td>@dish.DishId</td>
+                <td><a href="/Dishes/@dish.DishId">@dish.Name</a></td>
+                <td>@dish.ChefName</td>
+                <td>@dish.Calories</td>
+                <td>@dish.Tastiness</td>
+                <td>@dish.Description</td>
+                <td><a href="/Dishes/@dish.DishId/edit" class="btn btn-sm btn-info">Edit</a> <a href="/Dishes/@dish.DishId/delete" class="btn btn-sm btn-danger">Delete</a></td>
+            </tr>
+        }
+    </table>
+</div>

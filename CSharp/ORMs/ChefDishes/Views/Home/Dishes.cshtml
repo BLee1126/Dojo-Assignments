@@ -1,0 +1,41 @@
+@model Dish
+
+<div class="header">
+    <h1>Chef n' Dishes!</h1>
+    <a class="btn btn-lg btn-primary" href="/dishform">Create a Dish!</a>
+</div>
+<div class="toggle">
+    <a href="/"><h4>Chefs</h4></a>
+    <h4>Dishes</h4>
+</div>
+
+<div>
+    <table class="table table-dark table-hover">
+        <tr>
+            <th>Dish ID</th>
+            <th>Name</th>
+            <th>Chef Name</th>
+            <th>Calories</th>
+            <th>Tastiness</th>
+            <th>Description</th>
+
+        </tr>
+
+        @foreach(Chef chef in ViewBag.AllDishes)
+        {
+            foreach(Dish dish in chef.CreatedDishes)
+            {
+                <tr>
+                    <td>@dish.DishId</td>
+                    <td>@dish.Name</td>
+                    <td>@chef.FirstName @chef.LastName</td>
+                    <td>@dish.Calories</td>
+                    <td>@dish.Tastiness</td>
+                    <td>@dish.Description</td>
+                </tr>
+            }
+            
+
+        }
+    </table>
+</div>

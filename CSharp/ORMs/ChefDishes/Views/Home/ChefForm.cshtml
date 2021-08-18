@@ -1,0 +1,31 @@
+@model Chef
+
+<div class="header">
+    <h1>Chef n' Dishes!</h1>
+    <a class="btn btn-lg btn-primary" href="/">Home</a>
+    <a class="btn btn-lg btn-primary" href="/chefform">Create a Chef!</a>
+</div>
+
+<div class="container">
+    <h1>Add a new Chef!</h1>
+    <form asp-controller="Home" asp-action="CreateChef" method="post">
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control">
+            <span class="alert-danger" asp-validation-for="FirstName"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control">
+            <span class="alert-danger" asp-validation-for="LastName"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Birthday"></label>
+            <input type="Date" asp-for="Birthday" class="form-control">
+            <span class="alert-danger" asp-validation-for="Birthday"></span>
+        </div>
+
+        <input type="submit" class="btn btn-lg btn-primary">
+    </form>
+
+</div>

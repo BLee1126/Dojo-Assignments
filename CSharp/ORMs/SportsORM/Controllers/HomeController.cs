@@ -4,7 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SportsORM.Models;
+using Microsoft.Extensions.Logging;
 
 
 namespace SportsORM.Controllers
@@ -87,6 +89,47 @@ namespace SportsORM.Controllers
         [HttpGet("level_2")]
         public IActionResult Level2()
         {
+            ViewBag.Problem1 = _context.Leagues
+            .Where(league => league.Name == "Atlantic Soccer Conference")
+            .Include( league => league.Teams)
+            .ToList();
+
+            ViewBag.Problem2 = _context.Teams
+            .Where(team => team.TeamName.Contains("Penguins") && team.Location.Contains("Boston"))
+            .Include(team => team.CurrentPlayers)
+            .ToList();
+
+            ViewBag.Problem3 = _context.Teams
+            .Where(team => team.CurrLeague.Name.Contains("International Collegiate Baseball Conference"))
+            .Include(team => team.CurrentPlayers)
+            .ToList();
+
+            ViewBag.Problem4 = _context.Players
+            .Where(player => player.CurrentTeam.CurrLeague.Name.Contains("American Conference of Amateur Football") && player.LastName.Contains("Lopez"))
+            .ToList();
+
+            ViewBag.Problem5 = _context.Teams
+            .Where(team => team.CurrLeague.Sport.Contains("Football"))
+            .Include(team => team.CurrentPlayers)
+            .ToList();
+
+            ViewBag.Problem6 = _context.Players
+            .Where(player => player.FirstName.Contains("Sophia") || player.LastName.Contains("Sophia"))
+            .Include(player => player.AllTeams)
+            .ToList();
+
+            ViewBag.Problem7 = _context.Players
+            .Where(player => player.FirstName.Contains("Sophia") || player.LastName.Contains("Sophia"))
+            .Include(player => player.CurrentTeam)
+            .Include(player => player.CurrentTeam.CurrLeague)
+            .ToList();
+
+            ViewBag.Problem8 = _context.Players
+            .Where(player => player.LastName.Contains("Flores") && !player.CurrentTeam.TeamName.Contains("Roughriders"))
+            // .Include(player => player.CurrentTeam)
+            // .Include(player => player.CurrentTeam.CurrLeague)
+            .ToList();
+
             return View();
         }
 
