@@ -1,0 +1,36 @@
+﻿@model Product
+<div class="header">
+    <h1>Products</h1> 
+    <h1>    |    </h1>
+    <h1><a href="/categories">Categories</a></h1>
+</div>
+<div class = "container">
+    <form asp-controller="Home" asp-action="SubmitProduct" method="post">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control">
+            <span class="alert-danger" asp-validation-for="Name"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" class="form-control">
+            <span class="alert-danger" asp-validation-for="Description"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control">
+            <span class="alert-danger" asp-validation-for="Price"></span>
+        </div>
+
+        <input type="submit" class="btn btn-lg btn-primary">
+    </form>
+    <div class="List">
+        <h1>Existing Products</h1>
+        <ul>
+            @foreach(Product product in ViewBag.Products)
+            {
+                <li><a href="/products/@product.ProductId">@product.Name</a></li>
+            }
+        </ul>
+    </div>
+</div>

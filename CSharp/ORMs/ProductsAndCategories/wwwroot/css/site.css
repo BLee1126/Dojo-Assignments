@@ -1,0 +1,18 @@
+﻿.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15em;
+  margin: 0 auto;
+}
+
+.List {
+  border-left: 3px black solid;
+}
