@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\ProductsAndCategories.csproj",
+  "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\ProductsAndCategories.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,52 +15619,52 @@
   "RootNamespace": "ProductsAndCategories",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\Home\\Products.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\Home\\Products.cshtml",
       "TargetPath": "Views\\Home\\Products.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\Home\\SingleCategory.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\Home\\SingleCategory.cshtml",
       "TargetPath": "Views\\Home\\SingleCategory.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\Home\\SingleProduct.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\Home\\SingleProduct.cshtml",
       "TargetPath": "Views\\Home\\SingleProduct.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\Home\\Categories.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\Home\\Categories.cshtml",
       "TargetPath": "Views\\Home\\Categories.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\blee1\\Desktop\\Dojo Assignments\\CSharp\\ORMs\\ProductsAndCategories\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\blee1\\desktop\\Dojo Assignments\\CSharp\\ORMs\\productsandcategories\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }

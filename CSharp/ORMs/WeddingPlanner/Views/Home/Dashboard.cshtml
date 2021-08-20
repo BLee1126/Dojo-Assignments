@@ -1,0 +1,43 @@
+<div>
+    <h1>Plan your Wedding</h1>
+    <div>
+        <a href="/logout">Logout</a>
+    </div>
+</div>
+<div>
+    <table class="table table-dark table-hover">    
+        <tr>
+            <th>Wedding</th>
+            <th>Date</th>
+            <th>Guest</th>
+            <th>Action</th>
+        </tr>
+        @foreach(Wedding wedding in ViewBag.Weddings)
+        {
+            <tr>
+                <td><a href="/weddings/@wedding.WeddingId">@wedding.Wedder1 & @wedding.Wedder2</a></td>
+                <td>@wedding.Date.ToString("MM/dd/yyyy")</td>
+                @if(wedding.Rsvp != null){
+                    <td>@wedding.Rsvp.Count</td>
+                }
+                else{
+                    <td>0</td>
+                }  
+                @if(wedding.CreatorId == ViewBag.UserId)
+                {
+                    <td><a href="/weddings/delete/@wedding.WeddingId">Delete</a></td>
+                }
+
+                @if (wedding.Rsvp.Any(rsvp => rsvp.UserId == @ViewBag.UserId))
+                {
+                    <td><a href="/rsvp/delete/@wedding.WeddingId">Un-RSVP</a></td>
+                }
+                else{
+                    <td><a href="/rsvp/add/@wedding.WeddingId">RSVP</a></td>
+                }
+
+            </tr>
+        }
+    </table>    
+</div>
+<a href="/weddingform" btn btn-lg btn-success>New Wedding!</a>
